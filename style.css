@@ -1,0 +1,1933 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+
+header {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+}
+
+/*Top Bar*/
+
+header .topbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 52.5px;
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+header .topbarRows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .topbarLeft {
+    width: 33.33%;
+    float: left;
+}
+
+header .topbarLeftcontent {
+    padding: 0px;
+    margin-left: 45px;
+}
+
+header .topbarLeftcontent a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header .topbarLeftcontent a:hover {
+    color: white;
+    animation: backwards;
+    transition: 0.5s;
+}
+
+header .topbarLeftcontent i {
+    font-size: 12px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header .topbarLeftcontent i:hover {
+    color: white;
+    animation: backwards;
+    transition: 0.5s;
+}
+
+header .topbarLeftcontent button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+header .topbarLeftcontent button:hover {
+    color: white;
+    animation: backwards;
+    transition: 0.5s;
+}
+
+header .topbarCenter {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+header .topbarCentercontent {
+    padding: 0px;
+    margin-top: 2px;
+}
+
+header .topbarCentercontent p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header .topbarCentercontent a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header .topbarCentercontent a:hover {
+    color: white;
+    animation: backwards;
+    transition: 0.5s;
+}
+
+header .topbarRight {
+    width: 33.33%;
+    float: left;
+    text-align: right;
+}
+
+header .topbarRightcontent {
+    padding: 0px;
+    margin-right: 45px;
+}
+
+header .topbarRightcontent a {
+    margin-right: 26px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .topbarRightcontent a:hover {
+    color: white;
+    animation: backwards;
+    transition: 0.5s;
+}
+
+header .topbarRightcontent a:last-child {
+    margin-right: 0px;
+}
+
+/*Navigation*/
+
+header .navigation {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    margin-top: 52.5px;
+    height: 105px;
+    background-color: transparent;
+    padding: 15px;
+}
+
+header .naviagtionrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .navigationLeft {
+    width: 33.33%;
+    float: left;
+}
+
+header .navigationLeftcontent {
+    padding: 0px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+header .navigationLeftcontent a {
+    height: 105px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+header .navigationLeftcontent a:hover {
+    color: aquamarine;
+    transition: 0.5s;
+}
+
+header .navigationLeftcontent i {
+    font-size: 12.5px;
+}
+
+header .navigationLeftcontent .active {
+    color: aquamarine;
+}
+
+header .navigationLeftcontent a:last-child {
+    margin-right: 0px;
+}
+
+header .navigationCenter {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+header .navigationRight {
+    width: 33.33%;
+    float: left;
+    text-align: right;
+}
+
+header .navigationRightcontent {
+    padding: 0px;
+    margin-right: 45px;
+    margin-top: 22.5px;
+}
+
+header .navigationRightcontent button {
+    margin-right: 45px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .navigationRightcontent i {
+    font-size: 14px;
+    margin-right: 12.5px;
+}
+
+header .navigationRightcontent .shopping-cart i {
+    font-size: 28.5px;
+}
+
+header .navigationRightcontent .shopping-cart .items-shopping p{
+    position: absolute;
+    font-size: 12.5px;
+    color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: 93.56%;
+    top: 49%;
+}
+
+header .navigationRightcontent button:last-child {
+    margin-right: 0px;
+}
+
+header .navigationLeft .sub-menu {
+    padding: 100px 0px;
+}
+
+header .shopsubMenu {
+    position: absolute;
+    margin-top: 157.5px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    z-index: 999999;
+    padding: 15px;
+    display: none;
+}
+
+header .shopsubMenurows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .shopsubMenucolumns25 {
+    width: 25%;
+    float: left;
+}
+
+/*Header Sub-Menu*/
+
+/*Hamburger*/
+
+/*Mobile Menu*/
+
+/*Home Welcome*/
+
+.welcome {
+    right: 0;
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    z-index: 2;
+}
+
+.welcome video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.welcomeoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+ 
+}
+
+.welcometext {
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,0);
+}
+
+.welcometext h1 {
+    font-size: 56px;
+    margin-bottom: 7.5px;
+    font-weight: 700;
+    color: white;
+}
+
+.welcometext p {
+    margin-bottom: 45px;
+    font-size: 19px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5em;
+}
+
+.welcometext a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.welcometext a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+/*Home Best Sellers*/
+
+.bestSellers {
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 40px;
+    width: 100%;
+}
+
+.bestSellers h1 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.bestsellers-container {
+    margin-top: 20px;
+    width: 100%;
+    padding: 40px 40px 40px 0px;
+    position: relative;
+}
+
+.bestsellers-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bestsellers-image {
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.bestsellers-image img {
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 145vh;
+    border-radius: 15px;
+}
+
+.bestsellers-products {
+    flex: 1;
+    margin-right: 50px;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+}
+
+.bestsellers-productsrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bestsellers-productscolumns {
+    float: left;
+    width: 47.5%;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.bestsellers-productscolumns:last-child {
+    margin-right: 0px;
+}
+
+.bestsellerstext {
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    text-align: center;
+    width: 30%;
+}
+
+.bestsellerstext p {
+    font-size: 31.5px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 60px;
+    line-height: 1.25em;
+}
+
+.bestsellerstext a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.bestsellerstext a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+.bestproductcard {
+    position: relative;
+    text-align: center;
+    height: 560px;
+    margin-bottom: 50px;
+}
+
+.bestproductcard:last-child {
+    margin-bottom: 0px;
+}
+
+.bestproductcard img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.bestproductcard .secimg {
+    display: none;
+}
+
+.bestproducttext {
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.bestproducttext h6 {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.bestproducttext h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.bestproducttext p {
+    font-weight: 200;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.bestproducttext a {
+    text-decoration: none;
+    color: black;
+}
+
+.bestproducttext a:hover {
+    color: aquamarine;
+}
+
+.bestproductcard button {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    bottom: 0px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+.bestproductcard button:hover {
+    background-color: black;
+    color: aquamarine;
+    
+}
+
+/*Home Our Brands*/
+
+.ourBrands {
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+}
+
+.ourBrands h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.ourBrandscontainer {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ourBrandsrows {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ourBrandsrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ourBrandscolumns {
+    width: 20%;
+    float: left;
+    text-align: center;
+    align-items: center;
+}
+
+.ourBrandscolumns img {
+    width: 220px;
+    height: 200px;
+}
+
+
+/*Home About Us*/
+
+.aboutUs {
+    padding: 40px;
+    width: 100%;
+}
+
+.whoweare-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 27.5px 27.5px;
+}
+
+.whoweare-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.whoweare-image {
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 15px;
+    margin-right: 60px;
+}
+
+.whoweare-image img {
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 105vh;
+    border-radius: 15px;
+}
+
+.whoweare-content {
+    flex: 1;
+}
+
+.whoweare-content h2 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.whoweare-content p {
+    font-size: 16.5px;
+    font-weight: 300;
+    line-height: 1.95em;
+}
+
+.whoweare-content a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: black;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.whoweare-content a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+/*Home Products Designed For You*/
+
+.productsDesigned {
+    margin-top: 5px;
+    padding: 37.5px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.productsDesigned h1 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.productsDesignedrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.productsDesignedcolumn {
+    float: left;
+    width: 32%;
+    margin-right: 18.1px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.productsDesignedcolumn:last-child {
+    margin-right: 0px;
+}
+
+.productsDesignedcolumn p {
+    font-size: 15.5px;
+    font-weight: 100;
+    line-height: 1.8em;
+    margin-bottom: 50px;
+}
+
+.productsDesignedcolumn h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.productsDesignedcolumn img {
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.productsDesignedlink {
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,0);
+}
+
+.productsDesignedlink a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 12.5px 35px;
+    background: aquamarine;
+    border-radius: 30px;
+    font-weight: 500;
+    border-color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.productsDesignedlink a:hover {
+    letter-spacing: 2px;
+    border-color: aquamarine;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 1.65px;
+    background: black;
+    animation: ease-out 0.4s;
+    color: white;
+}
+
+.productsDesignedcontainer {
+    margin-top: 55px;
+}
+
+/*Home Why Shop With Us*/
+
+.whyShop {
+    margin-top: 20px;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.whyShop h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.whyShoprows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.whyShopcolumns {
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-right: 42.5px;
+    padding: 10px;
+    margin-top: 12.5px;
+}
+
+.whyShopcolumns:last-child {
+    margin-right: 0px;
+}
+
+.whyShopcolumns p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+
+.whyShopcolumns h3 {
+    font-size: 17.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.whyShopcolumns .material-symbols-outlined {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/*Home Featured Brands*/
+
+.featuredBrands {
+    margin-top: 5px;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.featuredBrandsrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.featuredBrandscolumns375 {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.featuredBrandscolumns375:last-child {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.featuredBrandscolumns25 {
+    float: left;
+    width: 25%;
+    margin: 45px;
+    
+}
+
+.featuredBrandscontainer img {
+    width: 100%;
+    height: 77.5vh;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.featuredBrandscontainer {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.featuredBrandscontainer:last-child {
+    margin-bottom: 0px;
+}
+
+.featuredBrandstext {
+    width: 85%;
+    text-align: left;
+    position: absolute;
+    bottom: 70px;
+    left: 37.5px;
+}
+
+.featuredBrandstext p {
+    color: rgb(232, 232, 232);
+    font-size: 16px;
+    font-weight: 100;
+    word-spacing: 2px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+
+.featuredBrandstext h4 {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 18.5px;
+    font-weight: 500;
+}
+
+.featuredBrandstext a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.featuredBrandstext a:hover {
+    border: none;
+    background-color: aquamarine;
+    color: black;
+}
+
+.featuredCenter {
+    padding: 20px;
+}
+
+.featuredCenter h2 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.featuredCenter p {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.featuredCenter a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: black;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.featuredCenter a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+/*Home More Products*/
+
+.moreProducts {
+    margin-top: 30px;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.moreProducts a {
+    text-align: center;
+}
+
+.moreProductsrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.moreProductcolumns {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.moreProductcolumns:last-child {
+    margin-right: 0px;
+}
+
+.moreProductcolumns img {
+    width: 96.5%;
+    object-fit: cover;
+    height: 65vh;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+
+.moreProducts h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 75px;
+}
+
+.moreProductcolumns h3 {
+    font-size: 28px;
+    margin-bottom: 80px;
+}
+
+.moreProductslink a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: black;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.moreProductslink a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+/*Home Contact Us*/
+
+.contactUs {
+    padding: 55px;
+    text-align: center;
+    width: 100%;
+}
+
+.homeForm {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    background-color: aquamarine;
+    grid-area: form;
+}
+
+.homeForm h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.homeformBox {
+    position: relative;
+    width: 100%;
+}
+
+.homeformBox .row50home {
+    display: flex;
+    gap: 20px;
+}
+
+.homeinputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.homeformBox .row100home .homeinputBox {
+    width: 100%;
+}
+
+.homeinputBox span {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.homeinputBox input {
+    padding: 20px;
+    font-size: 14.5px;
+    outline: none;
+    border: none;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.homeinputBox textarea {
+    padding: 20px;
+    font-size: 14.5px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    min-height: 200px;
+    resize: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.homeinputBox .contact-send-button {
+    background: black;
+    color: white;   
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.homeinputBox .contact-send-button:hover {
+    transition: 0.3s all linear;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.homeinputBox ::placeholder {
+    color: #777777;
+}
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+/*Contact Page Hero Section*/
+
+.contactHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(contactHero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.contactUscontent {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.contactUscontent h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+/*Contact Page Content*/
+
+.contactRows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contactColumns35 {
+    width: 30%;
+    float: left;
+}
+
+.contactColumn25 {
+    width: 32%;
+    float: left;
+    padding: 0px 0px 0px 78.5px;
+}
+
+.contactColumn40 {
+    width: 38%;
+    float: left;
+}
+
+.contactColumn40 img {
+    width: 100%;
+    object-fit: cover;
+    height: 90vh;
+    border-radius: 30px;
+}
+
+.contactContent {
+    position: relative;
+    padding: 100px 60px 60px 60px;
+    width: 100%;
+}
+
+.contactColumns35 h2 {
+    font-size: 24.5px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50contact {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.formBox .row100contact .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: black;
+    font-size: 14.75px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 12px;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 0px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.inputBox textarea {
+    padding: 12px;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    min-height: 200px;
+    resize: none;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+.inputBox .contact-send-button {
+    background: black;
+    color: white;   
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.inputBox .contact-send-button:hover {
+    transition: 0.3s all linear;
+    color: black;
+    background: aquamarine;
+}
+
+.inputBox ::placeholder {
+    color: #777777;
+}
+
+.contactColumn25 h2 {
+    font-size: 24.5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactColumn25 a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.contactColumn25 a:hover {
+    color: aquamarine;
+}
+
+.contactInfo {
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.contactColumn25 p {
+    color: rgb(112, 112, 112);
+    line-height: 1.85em;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/*About Page Hero Section*/
+
+.aboutUsHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(aboutushero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUscontentHero {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.aboutUscontentHero h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+/*About Our Story*/
+
+.ourstory {
+    padding: 40px;
+    width: 100%;
+}
+
+.ourstoryContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 27.5px 27.5px;
+}
+
+.ourstorySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ourstoryImage {
+    flex: 1; 
+    overflow: hidden;
+    border-radius: 15px;
+    margin-right: 60px;
+}
+
+.ourstoryImage img {
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 105vh;
+    border-radius: 15px;
+}
+
+.ourstoryContent {
+    flex: 1;
+}
+
+.ourstoryContent h2 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.ourstoryContent h4 {
+    font-size: 16.25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.ourstoryContent p {
+    font-size: 16.25px;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+/*About Our Values*/
+
+.ourValues {
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+}
+
+.ourValues h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.ourValuescontainer {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ourValuesrows {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.ourValuesrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ourValuescolumns {
+    width: 33.33%;
+    float: left;
+}
+
+.valueContainer {
+    margin-bottom: 75px;
+    padding: 29.5px 29.5px 12.5px 29.5px;
+}
+
+.valueContainer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.valueContainer p {
+    font-size: 16.25px;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+}
+
+.valueContainer:last-child p {
+    margin-bottom: 0px;
+}
+
+.valueContainer:last-child {
+    margin-bottom: 0px;
+}
+
+/*About Our Philisophy*/
+
+.ourPhilisophy {    
+    padding: 40px;
+    width: 100%;
+}
+
+.ourPhilisophycontainer {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(ourphilisophybackground.webp);
+    position: relative;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: left;
+    text-align: left;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.ourPhilisophyrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ourPhilisophycolumns70 {
+    float: left;
+    width: 57.5%;
+    padding: 115px 40px 20px 40px;
+}
+
+.ourPhilisophycolumns30 {
+    float: left;
+    width: 30%;
+    padding: 75px 30px 30px 30px;
+    text-align: center;
+    margin-left: 90px;
+}
+
+.ourPhilisophycolumns30 img {
+    object-fit: cover;
+    width: 100%;
+    height: 475px;
+    border-radius: 15px;
+}
+
+.ourPhilisophycolumns70 h2 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.ourPhilisophycolumns70 p {
+    font-size: 16.25px;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/*About Product Categories*/
+
+.productCategories {
+    padding: 40px;
+    width: 100%;
+}
+
+.productCategoriesrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.productCategoriescolumn {
+    margin-top: 20px;
+    float: left;
+    width: 31.8%;
+    margin-right: 30px;
+    position: relative;
+}
+
+.productCategoriescolumn:last-child {
+    margin-right: 0px;
+}
+
+.productCategoriescolumn img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 30px;
+    height: 75vh;
+}
+
+.productCategoriescolumn h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    font-size: 28px;
+}
+
+/*Shop Hero Section*/
+
+.shopHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(shophero.jpg);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+/*Shop Page Breadcrumb*/
+
+.shopHerotext {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.shopHerotext h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+/*Shop Page Categories*/
+
+.breadCrumb {
+    padding: 40px;
+    width: 100%;
+}
+
+.breadCrumb h3 {
+    font-size: 15px;
+    color: black;
+}
+
+.breadCrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadCrumb a:hover {
+    color: aquamarine;
+}
+
+/*Shop Page Categories*/
+
+.shopCategories {
+    padding: 40px;
+    width: 100%;
+}
+
+.shopCategoriesrows {}
+
+.shopCategoriesrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.shopCategoriescolumns {
+    float: left;
+    width: 25%;
+}
+
+.shopCategoriescontainer {}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*Terms & Conditions, Privacy Policy, Shipping Policy, Refund Policy, Cookie Policy Hero*/
+
+.termsHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(termsandconditionshero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.privacyHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(privacypolicyhero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.shippingHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(shippingpolicyhero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.refundHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(refundpolicyhero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.cookieHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(cookiepolicyhero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.termsContent, .privacyContent, .shippingContent, .refundContent, .cookieContent {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.termsContent h1, .privacyContent h1, .shippingContent h1, .refundContent h1, .cookieContent h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+/*Policies Content*/
+
+.termsandconditionsContent, .privacypolicyContent, .shippingpolicyContent, .refundpolicyContent, .cookiepolicyContent {
+    width: 100%;
+    padding: 100px 100px 30px 100px;
+}
+
+.termsandconditionsContent h2 , .privacypolicyContent h2 , .shippingpolicyContent h2 , .refundpolicyContent h2 , .cookiepolicyContent h2 {
+    font-size: 36px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.termsandconditionsContent p, .privacypolicyContent p, .shippingpolicyContent p, .refundpolicyContent p, .cookiepolicyContent p {
+    font-size: 15px;
+    line-height: 1.8em;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.termsandconditionsContent a, .privacypolicyContent a, .shippingpolicyContent a, .refundpolicyContent a, .cookiepolicyContent a {
+    color: black;
+    text-decoration: underline;
+}
+
+.termsandconditionsContent a:hover, .privacypolicyContent a:hover, .shippingpolicyContent a:hover, .refundpolicyContent a:hover, .cookiepolicyContent a:hover {
+    color: aquamarine;
+}
+
+.privacypolicyContent ul, .refundpolicyContent ul, .cookiepolicyContent ul{
+    font-size: 15px;
+    line-height: 1.8em;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.privacypolicyContent li, .refundpolicyContent li, .cookiepolicyContent li {
+    margin-left: 30px;
+}
+
+.privacypolicyContent li:first-child, .refundpolicyContent li:first-child, .cookiepolicyContent li:first-child {
+    margin-top: 15px;
+}
+
+/*FAQ Page*/
+
+.faqHero {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(faqhero.webp);
+    position: relative;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.faqHerocontent {
+    position: absolute;
+    z-index: 9999;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.faqHerocontent h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+/*FAQ Content*/
+
+.faqContent {
+    padding: 60px 40px 40px 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.faqContent h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.faqContenttabButtons button {
+    margin-right: 60px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.faqContenttabButtons button:hover {
+    color: aquamarine;
+    font-weight: 500;
+}
+
+.faqContenttabButtons .active {
+    color: aquamarine;
+    font-weight: 600;
+} 
+
+.faqContenttabButtons button:last-child {
+    margin-right: 0px;
+}
+
+.faqContentsearchButton {}
+
+.faqTabs {}
+
+/**/
+
+/**/
+
+/*404 Page*/
+
+.errorsect {
+    position: absolute;
+    z-index: 9999;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.error {
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.errorsect img {
+    
+    width: 1000px;
+    height: 400px;
+}
+
+.errorsect h1 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: black;
+    margin-top: 30px;
+}
+
+.errorsect p {
+    font-size: 16.25px;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.errorsect a {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: black;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.errorsect a:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
+
+
+
