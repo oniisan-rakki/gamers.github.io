@@ -1134,7 +1134,202 @@ header .shopsubMenucolumns25 {
 footer {
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 50px 50px 40px 50px;
+    position: relative;
+}
+
+footer .topfooter .topfooterRows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer .topfooter {
+    margin-bottom: 80px;
+}
+
+footer .topfooter .footerLeft {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+footer .topfooter .footerLeft h2 {
+    font-size: 28px;
+}
+
+footer .topfooter .footerRight {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+footer .topfooter .footerRight a {
+    color: white;
+    font-size: 28px;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+footer .topfooter .footerRight a:last-child {
+    margin-right: 0px;
+}
+
+footer .topfooter .footerRight a:hover {
+    color: aquamarine;
+}
+
+footer .middlefooter {
+    position: relative;
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+footer .middlefooter .middlefooterRows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer .middlefooter .middlefooterColumns35 {
+    width: 30%;
+    float: left;
+}
+
+footer .middlefooter .middlefooterColumns35 h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerForm {
+    width: 100%;
+    border: none;
+    padding: 0px 0px 0px 25px;
+    text-align: left;
+    grid-area: form;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox {
+    position: relative;
+    width: 100%;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer {
+    display: flex;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer .footerinputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer .footerinputBox span {
+    color: white;
+    font-size: 14.5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer .footerinputBox input {
+    padding: 15px;
+    font-size: 14.5px;
+    outline: none;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+    background: transparent;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer .footer-send-button {
+    background: aquamarine;
+    color: black;   
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 15px 165px;
+}
+
+footer .middlefooter .middlefooterColumns35 .footerformBox .row100footer .footer-send-button:hover {
+    transition: 0.3s all linear;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+footer .middlefooter .middlefooterColumns20 {
+    width: 25%;
+    float: left;
+}
+
+footer .middlefooter .middlefooterColumns20 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 14.5px;
+    transition: 0.4s;
+}
+
+footer .middlefooter .middlefooterColumns20 p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer .middlefooter .middlefooterColumns20 a:hover {
+    color: aquamarine;
+    animation: ease-in-out
+}
+
+footer .middlefooter .middlefooterColumns20 h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .middlefooter .middlefooterColumns15 {
+    width: 15%;
+    float: left;
+}
+
+footer .middlefooter .middlefooterColumns15 h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .middlefooter .middlefooterColumns15 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 14.5px;
+    transition: 0.4s;
+}
+
+footer .middlefooter .middlefooterColumns15 a:hover {
+    color: aquamarine;
+}
+
+footer .middlefooter .middlefooterColumns15 p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer .middlefooter .middlefooterColumns15 .page {
+    color: aquamarine;
+}
+
+footer .bottomfooter p {
+    font-size: 15px;
+    font-weight: 500;
 }
 
 /*Contact Page Hero Section*/
@@ -1426,8 +1621,8 @@ footer {
 }
 
 .ourValuesrows {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 
 .ourValuesrows:after {
@@ -1442,8 +1637,13 @@ footer {
 }
 
 .valueContainer {
-    margin-bottom: 75px;
+    margin-bottom: 20px;
     padding: 29.5px 29.5px 12.5px 29.5px;
+}
+
+.valueContainer i {
+    font-size: 45px;
+    margin-bottom: 30px;
 }
 
 .valueContainer h3 {
@@ -1571,6 +1771,23 @@ footer {
     font-size: 28px;
 }
 
+.productCategoriescolumn .aboutbutton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    right: 8%;
+    bottom: 9%;
+}
+
+.productCategoriescolumn span {
+    font-size: 35px;
+    margin-top: 7.5px;
+    color: black;
+}
+
 /*Shop Hero Section*/
 
 .shopHero {
@@ -1603,10 +1820,10 @@ footer {
     font-weight: 500;
 }
 
-/*Shop Page Categories*/
+/*Shop Page Breadcrumbs*/
 
 .breadCrumb {
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     width: 100%;
 }
 
@@ -1627,11 +1844,14 @@ footer {
 /*Shop Page Categories*/
 
 .shopCategories {
-    padding: 40px;
+    padding: 10px 20px 40px 20px;
     width: 100%;
 }
 
-.shopCategoriesrows {}
+.shopCategories h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
 .shopCategoriesrows:after {
     content: "";
@@ -1644,7 +1864,50 @@ footer {
     width: 25%;
 }
 
-.shopCategoriescontainer {}
+.shopCategoriescontainer {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 75px;
+}
+
+.shopCategoriescontainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.shopCategoriescontainer h2 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 35px;
+}
+
+.shopCategoriescontainer a {
+    text-decoration: none;
+    font-size: 14.5px;
+    color: black;
+    font-weight: 600;
+}
+
+.shopCategoriescontainer .catbut {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.shopCategoriescontainer span {
+    font-size: 35px;
+    margin-top: 7.5px;
+}
 
 /**/
 
@@ -1855,10 +2118,6 @@ footer {
 .faqContenttabButtons button:last-child {
     margin-right: 0px;
 }
-
-.faqContentsearchButton {}
-
-.faqTabs {}
 
 /**/
 
