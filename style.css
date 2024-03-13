@@ -1911,18 +1911,6 @@ footer .bottomfooter p {
 
 /**/
 
-/**/
-
-/**/
-
-/**/
-
-/**/
-
-/**/
-
-/**/
-
 /*Terms & Conditions, Privacy Policy, Shipping Policy, Refund Policy, Cookie Policy Hero*/
 
 .termsHero {
@@ -2093,7 +2081,7 @@ footer .bottomfooter p {
 .faqContent h1 {
     font-size: 33px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-transform: capitalize;
 }
 
@@ -2103,6 +2091,7 @@ footer .bottomfooter p {
     border: none;
     font-size: 18px;
     cursor: pointer;
+    color: black;
 }
 
 .faqContenttabButtons button:hover {
@@ -2110,18 +2099,86 @@ footer .bottomfooter p {
     font-weight: 500;
 }
 
-.faqContenttabButtons .active {
+.faqContenttabButtons .faqCategory {
     color: aquamarine;
     font-weight: 600;
 } 
 
 .faqContenttabButtons button:last-child {
     margin-right: 0px;
+    margin-bottom: 25px;
 }
 
-/**/
+/*FAQ Accordions*/
 
-/**/
+.faqTabs {
+    text-align: left;
+    padding: 0px 40px 40px 40px;
+}
+
+.accordion {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.4s;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.faqtog:after {
+    content: "\2212";
+    color: aquamarine;
+}
+
+.faqtab p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.faqtab {
+    margin-bottom: 45px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faqstyle {
+    border-bottom: 1px solid black;
+}
+
+.faqtab a {
+    margin-right: 30px;
+    font-size: 26px;
+    color: black;
+}
+
+.faqtab a:hover {
+    color: aquamarine;
+}
+
+.faqtab .faqcontentlink {
+    color: black;
+    font-size: 15px;
+    margin-right: 0px;
+}
 
 /*404 Page*/
 
