@@ -1843,12 +1843,12 @@ footer .bottomfooter p {
 
 /*Shop Page Categories*/
 
-.shopCategories {
+.shopCategories, .shopBestSellers, .shopOurFavourites, .shopJustIn , .shopOnSale , .shopByBrand , .shopShopAll  {
     padding: 10px 20px 40px 20px;
     width: 100%;
 }
 
-.shopCategories h2 {
+.shopCategories h2 , .shopBestSellers h2, .shopOurFavourites h2, .shopJustIn h2 , .shopOnSale h2 , .shopByBrand h2 , .shopShopAll h2 {
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -1909,7 +1909,49 @@ footer .bottomfooter p {
     margin-top: 7.5px;
 }
 
-/**/
+.shopBestSellersrows:after , .shopOurFavouritesrows:after , .shopJustInrows:after , .shopOnSalerows:after , .shopByBrandrows:after , .shopShopAllrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.shopShopAllcolumns , .shopByBrandcolumns , .shopOnSalecolumns , .shopJustIncolumns , .shopOurFavouritescolumn , .shopBestSellerscolumn {
+    width: 25%;
+    float: left;
+}
+
+/*Shop Filter and Products*/
+
+.filterAndproducts {
+    padding: 20px;
+}
+
+.filterAndproductsrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.filterAndproductscolumns30 {
+    float: left;
+    width: 17.5%;
+}
+
+.filterAndproductscolumns70 {
+    float: left;
+    width: 82.5%;
+}
+
+.filterAndproductsheaderImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.filterAndproductscolumns70 .filtersAndproductsProducts .filtersAndproductsProoductscolumns {
+    float: left;
+    width: 25%;
+}
 
 /*Terms & Conditions, Privacy Policy, Shipping Policy, Refund Policy, Cookie Policy Hero*/
 
