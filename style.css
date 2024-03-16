@@ -1953,6 +1953,122 @@ footer .bottomfooter p {
     width: 25%;
 }
 
+/*Product Cards*/
+
+.shopPageProductrows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.shopPageProductcolumn {
+    float: left;
+    width: 25%;
+}
+
+.shopPageProductContainer {
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.shopPageProductproductcard .secimg {
+    display: none;
+}
+
+.shopPageProductproductcard img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    border-radius: 30px;
+}
+
+.shopPageProducttext {
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.shopPageProducttext h6 {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.shopPageProducttext h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.shopPageProducttext p {
+    font-weight: 200;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.shopPageProducttext a {
+    text-decoration: none;
+    color: black;
+}
+
+.shopPageProducttext a:hover {
+    color: aquamarine;
+}
+
+.shopPageProductproductcard button {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    bottom: 0px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: aquamarine;
+    transition: 0.5s;
+    margin-top: 30px;
+    
+}
+
+.shopPageProductproductcard button:hover {
+    background-color: black;
+    color: aquamarine;
+}
+
+.bottombutton {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1.65px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    border-color: black;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.bottombutton:hover {
+    border-radius: 5px;
+    color: black;
+    background: aquamarine;
+    animation: ease-out 0.4s;
+    border: none;
+}
+
 /*Terms & Conditions, Privacy Policy, Shipping Policy, Refund Policy, Cookie Policy Hero*/
 
 .termsHero {
