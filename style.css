@@ -858,7 +858,10 @@ header .shopsubMenucolumns25 {
     float: left;
     width: 25%;
     margin: 45px;
-    
+    position: sticky;
+    bottom: 0px;
+    top: 300px;
+    transition: 0.3s;
 }
 
 .featuredBrandscontainer img {
